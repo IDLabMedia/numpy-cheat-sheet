@@ -9,11 +9,11 @@ def func_table(fname, desc, note=None, see_also=None):
     LINK = "https://numpy.org/doc/stable/reference/generated/numpy.%s.html"
     f.write((" | [`np.%s()`](" + LINK + "){target=_blank} | %s") % (fname, fname, desc))
     if note is not None:
-        f.write("<br/>*Opmerking*: %s" % note)
+        f.write("<br/><span class=note>Opmerking</span>: %s" % note)
     if see_also is not None:
         if not isinstance(see_also, list):
             see_also = [see_also]
-        f.write("<br/>*Zie ook*: %s" % ", ".join([("[`np.%s()`](" + LINK + "){target=_blank}") % (x, x) for x in  see_also]))
+        f.write("<br/><span class=seealso>Zie ook</span>: %s" % ", ".join([("[`np.%s()`](" + LINK + "){target=_blank}") % (x, x) for x in  see_also]))
     f.write("\n")
 
 func = func_table

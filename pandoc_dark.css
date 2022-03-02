@@ -11,7 +11,7 @@ html {
 
 body {
   color: #bdae93;
-  font-family: 'Share Tech Mono', monospace;
+  font-family: 'Roboto', 'Share Tech Mono', monospace;
   font-size: 12px;
   line-height: 1.7;
   padding: 1em;
@@ -33,6 +33,17 @@ input[type="checkbox"]:before {
 
 input[type="checkbox"]:checked:before {
   background-image: linear-gradient(135deg, #b8bb26 0%, #FFF 500%);
+}
+
+span.note {
+    text-decoration: underline;
+    color: antiquewhite;
+    font-style: italic;
+}
+span.seealso {
+    color: #91681b;
+    font-style: italic;
+    text-decoration: underline;
 }
 
 a {
@@ -144,7 +155,7 @@ pre, code, kbd, samp {
   color: #fabd2f;
   font-family: monospace, monospace;
   _font-family: 'courier new', monospace;
-  font-size: 0.98em;
+  font-size: 0.93em;
 }
 
 pre {

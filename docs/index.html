@@ -20,7 +20,7 @@ overflow-y: scroll;
 }
 body {
 color: #bdae93;
-font-family: 'Share Tech Mono', monospace;
+font-family: 'Roboto', 'Share Tech Mono', monospace;
 font-size: 12px;
 line-height: 1.7;
 padding: 1em;
@@ -40,6 +40,16 @@ background-color: #282828;
 }
 input[type="checkbox"]:checked:before {
 background-image: linear-gradient(135deg, #b8bb26 0%, #FFF 500%);
+}
+span.note {
+text-decoration: underline;
+color: antiquewhite;
+font-style: italic;
+}
+span.seealso {
+color: #91681b;
+font-style: italic;
+text-decoration: underline;
 }
 a {
 color: #6087c8;
@@ -129,7 +139,7 @@ pre, code, kbd, samp {
 color: #fabd2f;
 font-family: monospace, monospace;
 _font-family: 'courier new', monospace;
-font-size: 0.98em;
+font-size: 0.93em;
 }
 pre {
 white-space: pre;
@@ -336,11 +346,11 @@ page-break-after: avoid;
 </tr>
 <tr class="even">
 <td><a href="https://numpy.org/doc/stable/reference/generated/numpy.expand_dims.html" target="_blank"><code>np.expand_dims()</code></a></td>
-<td>Voert een nieuwe dimensie van lengte 1 in op de gewenste plaats van de shape van een <code>np.array</code>.<br /><em>Opmerking</em>: Dit kan ook met gebruik van <code>None</code> in de subscript operator.</td>
+<td>Voert een nieuwe dimensie van lengte 1 in op de gewenste plaats van de shape van een <code>np.array</code>.<br /><span class="note">Opmerking</span>: Dit kan ook met gebruik van <code>None</code> in de subscript operator.</td>
 </tr>
 <tr class="odd">
 <td><a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.astype.html" target="_blank"><code>np.ndarray.astype()</code></a></td>
-<td>Converteert (i.e.: cast) de <code>np.array</code> naar een gewenst datatype.<br /><em>Opmerking</em>: Dit voer je uit als methode op een <code>np.array</code>.</td>
+<td>Converteert (i.e.: cast) de <code>np.array</code> naar een gewenst datatype.<br /><span class="note">Opmerking</span>: Dit voer je uit als methode op een <code>np.array</code>.</td>
 </tr>
 </tbody>
 </table>
@@ -359,7 +369,7 @@ page-break-after: avoid;
 <tbody>
 <tr class="odd">
 <td><a href="https://numpy.org/doc/stable/reference/generated/numpy.sum.html" target="_blank"><code>np.sum()</code></a></td>
-<td>Sommeert getallen in een <code>np.array</code> over alle of enkele assen.<br /><em>Opmerking</em>: Bij gebruik lees de <em>Note</em> in de documentatie.</td>
+<td>Sommeert getallen in een <code>np.array</code> over alle of enkele assen.<br /><span class="note">Opmerking</span>: Bij gebruik lees de <em>Note</em> in de documentatie.</td>
 </tr>
 <tr class="even">
 <td><a href="https://numpy.org/doc/stable/reference/generated/numpy.mean.html" target="_blank"><code>np.mean()</code></a></td>
@@ -387,11 +397,11 @@ page-break-after: avoid;
 </tr>
 <tr class="even">
 <td><a href="https://numpy.org/doc/stable/reference/generated/numpy.amax.html" target="_blank"><code>np.amax()</code></a></td>
-<td>Geeft het grootste getal over alle of enkele assen.<br /><em>Opmerking</em>: Niet te verwarren met <code>np.maximum()</code>.<br /><em>Zie ook</em>: <a href="https://numpy.org/doc/stable/reference/generated/numpy.maximum.html" target="_blank"><code>np.maximum()</code></a></td>
+<td>Geeft het grootste getal over alle of enkele assen.<br /><span class="note">Opmerking</span>: Niet te verwarren met <code>np.maximum()</code>.<br /><span class="seealso">Zie ook</span>: <a href="https://numpy.org/doc/stable/reference/generated/numpy.maximum.html" target="_blank"><code>np.maximum()</code></a></td>
 </tr>
 <tr class="odd">
 <td><a href="https://numpy.org/doc/stable/reference/generated/numpy.amin.html" target="_blank"><code>np.amin()</code></a></td>
-<td>Geeft het kleinste getal over alle of enkele assen.<br /><em>Opmerking</em>: Niet te verwarren met <code>np.minimum()</code>.<br /><em>Zie ook</em>: <a href="https://numpy.org/doc/stable/reference/generated/numpy.minimum.html" target="_blank"><code>np.minimum()</code></a></td>
+<td>Geeft het kleinste getal over alle of enkele assen.<br /><span class="note">Opmerking</span>: Niet te verwarren met <code>np.minimum()</code>.<br /><span class="seealso">Zie ook</span>: <a href="https://numpy.org/doc/stable/reference/generated/numpy.minimum.html" target="_blank"><code>np.minimum()</code></a></td>
 </tr>
 </tbody>
 </table>
@@ -451,11 +461,11 @@ page-break-after: avoid;
 <tbody>
 <tr class="odd">
 <td><a href="https://numpy.org/doc/stable/reference/generated/numpy.zeros.html" target="_blank"><code>np.zeros()</code></a></td>
-<td>Produceert een <code>np.array</code> gevuld met nullen van de gegeven grootte.<br /><em>Zie ook</em>: <a href="https://numpy.org/doc/stable/reference/generated/numpy.zeros_like.html" target="_blank"><code>np.zeros_like()</code></a></td>
+<td>Produceert een <code>np.array</code> gevuld met nullen van de gegeven grootte.<br /><span class="seealso">Zie ook</span>: <a href="https://numpy.org/doc/stable/reference/generated/numpy.zeros_like.html" target="_blank"><code>np.zeros_like()</code></a></td>
 </tr>
 <tr class="even">
 <td><a href="https://numpy.org/doc/stable/reference/generated/numpy.ones.html" target="_blank"><code>np.ones()</code></a></td>
-<td>Produceert een <code>np.array</code> gevuld met énen van de gegeven grootte.<br /><em>Zie ook</em>: <a href="https://numpy.org/doc/stable/reference/generated/numpy.ones_like.html" target="_blank"><code>np.ones_like()</code></a></td>
+<td>Produceert een <code>np.array</code> gevuld met énen van de gegeven grootte.<br /><span class="seealso">Zie ook</span>: <a href="https://numpy.org/doc/stable/reference/generated/numpy.ones_like.html" target="_blank"><code>np.ones_like()</code></a></td>
 </tr>
 <tr class="odd">
 <td><a href="https://numpy.org/doc/stable/reference/generated/numpy.arange.html" target="_blank"><code>np.arange()</code></a></td>
@@ -463,7 +473,7 @@ page-break-after: avoid;
 </tr>
 <tr class="even">
 <td><a href="https://numpy.org/doc/stable/reference/generated/numpy.linspace.html" target="_blank"><code>np.linspace()</code></a></td>
-<td>Genereert een rij getallen met geven startpunt, eindpunt, en aantal gewenste waarden.<br /><em>Opmerking</em>: Werkt ook op tuples.</td>
+<td>Genereert een rij getallen met geven startpunt, eindpunt, en aantal gewenste waarden.<br /><span class="note">Opmerking</span>: Werkt ook op tuples.</td>
 </tr>
 </tbody>
 </table>
@@ -491,7 +501,7 @@ page-break-after: avoid;
 </tr>
 <tr class="odd">
 <td><a href="https://numpy.org/doc/stable/reference/generated/numpy.tile.html" target="_blank"><code>np.tile()</code></a></td>
-<td>Herhaalt éénzelfde <code>np.array</code> een gegeven aantal keer over bestaande en nieuwe dimensies.<br /><em>Zie ook</em>: <a href="https://numpy.org/doc/stable/reference/generated/numpy.repeat.html" target="_blank"><code>np.repeat()</code></a></td>
+<td>Herhaalt éénzelfde <code>np.array</code> een gegeven aantal keer over bestaande en nieuwe dimensies.<br /><span class="seealso">Zie ook</span>: <a href="https://numpy.org/doc/stable/reference/generated/numpy.repeat.html" target="_blank"><code>np.repeat()</code></a></td>
 </tr>
 </tbody>
 </table>
@@ -566,15 +576,15 @@ page-break-after: avoid;
 <tbody>
 <tr class="odd">
 <td><a href="https://numpy.org/doc/stable/reference/generated/numpy.equal.html" target="_blank"><code>np.equal()</code></a></td>
-<td>Vergelijkt de twee inputs elementsgewijs met de gelijkheids operator.<br /><em>Zie ook</em>: <a href="https://numpy.org/doc/stable/reference/generated/numpy.not_equal.html" target="_blank"><code>np.not_equal()</code></a></td>
+<td>Vergelijkt de twee inputs elementsgewijs met de gelijkheids operator.<br /><span class="seealso">Zie ook</span>: <a href="https://numpy.org/doc/stable/reference/generated/numpy.not_equal.html" target="_blank"><code>np.not_equal()</code></a></td>
 </tr>
 <tr class="even">
 <td><a href="https://numpy.org/doc/stable/reference/generated/numpy.less.html" target="_blank"><code>np.less()</code></a></td>
-<td>Vergelijkt de twee inputs elementsgewijs met de kleiner-dan operator.<br /><em>Zie ook</em>: <a href="https://numpy.org/doc/stable/reference/generated/numpy.less_equal.html" target="_blank"><code>np.less_equal()</code></a></td>
+<td>Vergelijkt de twee inputs elementsgewijs met de kleiner-dan operator.<br /><span class="seealso">Zie ook</span>: <a href="https://numpy.org/doc/stable/reference/generated/numpy.less_equal.html" target="_blank"><code>np.less_equal()</code></a></td>
 </tr>
 <tr class="odd">
 <td><a href="https://numpy.org/doc/stable/reference/generated/numpy.greater.html" target="_blank"><code>np.greater()</code></a></td>
-<td>Vergelijkt de twee inputs elementsgewijs met de groter-dan operator.<br /><em>Zie ook</em>: <a href="https://numpy.org/doc/stable/reference/generated/numpy.greater_equal.html" target="_blank"><code>np.greater_equal()</code></a></td>
+<td>Vergelijkt de twee inputs elementsgewijs met de groter-dan operator.<br /><span class="seealso">Zie ook</span>: <a href="https://numpy.org/doc/stable/reference/generated/numpy.greater_equal.html" target="_blank"><code>np.greater_equal()</code></a></td>
 </tr>
 </tbody>
 </table>
@@ -593,11 +603,11 @@ page-break-after: avoid;
 <tbody>
 <tr class="odd">
 <td><a href="https://numpy.org/doc/stable/reference/generated/numpy.linalg.inv.html" target="_blank"><code>np.linalg.inv()</code></a></td>
-<td>Berekent inverse van een vierkante matrix.<br /><em>Opmerking</em>: Werkt op de 2 binnenste dimensies.</td>
+<td>Berekent inverse van een vierkante matrix.<br /><span class="note">Opmerking</span>: Werkt op de 2 binnenste dimensies.</td>
 </tr>
 <tr class="even">
 <td><a href="https://numpy.org/doc/stable/reference/generated/numpy.linalg.matmul.html" target="_blank"><code>np.linalg.matmul()</code></a></td>
-<td>Berekent matrix-matrix vermenigvuldiging<br /><em>Opmerking</em>: Werkt op de 2 binnenste dimensies van beide inputs.</td>
+<td>Berekent matrix-matrix vermenigvuldiging<br /><span class="note">Opmerking</span>: Werkt op de 2 binnenste dimensies van beide inputs.</td>
 </tr>
 </tbody>
 </table>
