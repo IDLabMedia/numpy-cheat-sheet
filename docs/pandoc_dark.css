@@ -153,8 +153,7 @@ hr {
 
 pre, code, kbd, samp {
   color: #fabd2f;
-  font-family: monospace, monospace;
-  _font-family: 'courier new', monospace;
+  font-family: monospace;
   font-size: 0.93em;
 }
 
