@@ -4,6 +4,8 @@ f = open("cheat-sheet.md", "w")
 
 def func_table(fname, desc, note=None, see_also=None):
     desc = desc.replace("np.array", "`np.array`")
+    if note is not None:
+        note = note.replace("np.array", "`np.array`")
     LINK = "https://numpy.org/doc/stable/reference/generated/numpy.%s.html"
     f.write((" | [`np.%s()`](" + LINK + "){target=_blank} | %s") % (fname, fname, desc))
     if note is not None:
@@ -35,6 +37,7 @@ table_header()
 func("squeeze", "Verandert de shape van een np.array zodat alle dimensies met lengte 1 verdwijnen.")
 func("expand_dims", "Voert een nieuwe dimensie van lengte 1 in op de gewenste plaats van de shape van een np.array.",
         note="Dit kan ook met gebruik van `None` in de subscript operator.")
+func("ndarray.astype", "Converteert (i.e.: cast) de np.array naar een gewenst datatype.", note="Dit voer je uit als methode op een np.array.")
 
 subsection("Wiskundige reducties")
 table_header()
