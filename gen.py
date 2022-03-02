@@ -105,7 +105,7 @@ for_more("https://numpy.org/doc/stable/reference/routines.linalg.html")
 f.close()
 
 import subprocess
-process = subprocess.run(["pandoc", "-f", "markdown_phpextra", "-t", "html5", "--standalone", "--css", "pandoc_dark.css", "--metadata", "title='NumPy cheat sheet'", "--toc", "-H", "analytics.html", "-o", "cheat-sheet.html", "cheat-sheet.md"])
+process = subprocess.run(["pandoc", "-f", "markdown", "-t", "html5", "--standalone", "--css", "pandoc_dark.css", "--metadata", "title='NumPy cheat sheet'", "--toc", "-H", "analytics.html", "-o", "cheat-sheet.html", "cheat-sheet.md"])
 print("exit-code", process.returncode)
 
 subprocess.run(["mkdir", "-p", "docs/"])

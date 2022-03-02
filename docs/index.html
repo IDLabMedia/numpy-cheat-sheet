@@ -28,23 +28,23 @@
 </header>
 <nav id="TOC">
 <ul>
-<li><a>Basis</a><ul>
-<li><a>Hulpfuncties</a></li>
-<li><a>Wiskundige reducties</a></li>
-<li><a>Wiskundige berekeningen (elementsgewijs)</a></li>
-<li><a>Array creatie</a></li>
-<li><a>Arrays samenvoegen en herhalen</a></li>
+<li><a href="#basis">Basis</a><ul>
+<li><a href="#hulpfuncties">Hulpfuncties</a></li>
+<li><a href="#wiskundige-reducties">Wiskundige reducties</a></li>
+<li><a href="#wiskundige-berekeningen-elementsgewijs">Wiskundige berekeningen (elementsgewijs)</a></li>
+<li><a href="#array-creatie">Array creatie</a></li>
+<li><a href="#arrays-samenvoegen-en-herhalen">Arrays samenvoegen en herhalen</a></li>
 </ul></li>
-<li><a>Logische functies</a><ul>
-<li><a>Waarheid test functies</a></li>
-<li><a>Logische operatoren</a></li>
-<li><a>Vergelijkingen</a></li>
+<li><a href="#logische-functies">Logische functies</a><ul>
+<li><a href="#waarheid-test-functies">Waarheid test functies</a></li>
+<li><a href="#logische-operatoren">Logische operatoren</a></li>
+<li><a href="#vergelijkingen">Vergelijkingen</a></li>
 </ul></li>
-<li><a>Lineaire Algebra</a></li>
+<li><a href="#lineaire-algebra">Lineaire Algebra</a></li>
 </ul>
 </nav>
-<h2>Basis</h2>
-<h3>Hulpfuncties</h3>
+<h2 id="basis">Basis</h2>
+<h3 id="hulpfuncties">Hulpfuncties</h3>
 <table>
 <colgroup>
 <col style="width: 39%" />
@@ -63,15 +63,15 @@
 </tr>
 <tr class="even">
 <td><a href="https://numpy.org/doc/stable/reference/generated/numpy.expand_dims.html" target="_blank"><code>np.expand_dims()</code></a></td>
-<td>Voert een nieuwe dimensie van lengte 1 in op de gewenste plaats van de shape van een <code>np.array</code>.<br/><span class=note>Opmerking</span>: Dit kan ook met gebruik van <code>None</code> in de subscript operator.</td>
+<td>Voert een nieuwe dimensie van lengte 1 in op de gewenste plaats van de shape van een <code>np.array</code>.<br/><span class="note">Opmerking</span>: Dit kan ook met gebruik van <code>None</code> in de subscript operator.</td>
 </tr>
 <tr class="odd">
 <td><a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.astype.html" target="_blank"><code>np.ndarray.astype()</code></a></td>
-<td>Converteert (i.e.: cast) de <code>np.array</code> naar een gewenst datatype.<br/><span class=note>Opmerking</span>: Dit voer je uit als methode op een <code>np.array</code>.</td>
+<td>Converteert (i.e.: cast) de <code>np.array</code> naar een gewenst datatype.<br/><span class="note">Opmerking</span>: Dit voer je uit als methode op een <code>np.array</code>.</td>
 </tr>
 </tbody>
 </table>
-<h3>Wiskundige reducties</h3>
+<h3 id="wiskundige-reducties">Wiskundige reducties</h3>
 <table>
 <colgroup>
 <col style="width: 39%" />
@@ -86,7 +86,7 @@
 <tbody>
 <tr class="odd">
 <td><a href="https://numpy.org/doc/stable/reference/generated/numpy.sum.html" target="_blank"><code>np.sum()</code></a></td>
-<td>Sommeert getallen in een <code>np.array</code> over alle of enkele assen.<br/><span class=note>Opmerking</span>: Bij gebruik lees de <em>Note</em> in de documentatie.</td>
+<td>Sommeert getallen in een <code>np.array</code> over alle of enkele assen.<br/><span class="note">Opmerking</span>: Bij gebruik lees de <em>Note</em> in de documentatie.</td>
 </tr>
 <tr class="even">
 <td><a href="https://numpy.org/doc/stable/reference/generated/numpy.mean.html" target="_blank"><code>np.mean()</code></a></td>
@@ -114,16 +114,16 @@
 </tr>
 <tr class="even">
 <td><a href="https://numpy.org/doc/stable/reference/generated/numpy.amax.html" target="_blank"><code>np.amax()</code></a></td>
-<td>Geeft het grootste getal over alle of enkele assen.<br/><span class=note>Opmerking</span>: Niet te verwarren met <code>np.maximum()</code>.<br/><span class=seealso>Zie ook</span>: <a href="https://numpy.org/doc/stable/reference/generated/numpy.maximum.html" target="_blank"><code>np.maximum()</code></a></td>
+<td>Geeft het grootste getal over alle of enkele assen.<br/><span class="note">Opmerking</span>: Niet te verwarren met <code>np.maximum()</code>.<br/><span class="seealso">Zie ook</span>: <a href="https://numpy.org/doc/stable/reference/generated/numpy.maximum.html" target="_blank"><code>np.maximum()</code></a></td>
 </tr>
 <tr class="odd">
 <td><a href="https://numpy.org/doc/stable/reference/generated/numpy.amin.html" target="_blank"><code>np.amin()</code></a></td>
-<td>Geeft het kleinste getal over alle of enkele assen.<br/><span class=note>Opmerking</span>: Niet te verwarren met <code>np.minimum()</code>.<br/><span class=seealso>Zie ook</span>: <a href="https://numpy.org/doc/stable/reference/generated/numpy.minimum.html" target="_blank"><code>np.minimum()</code></a></td>
+<td>Geeft het kleinste getal over alle of enkele assen.<br/><span class="note">Opmerking</span>: Niet te verwarren met <code>np.minimum()</code>.<br/><span class="seealso">Zie ook</span>: <a href="https://numpy.org/doc/stable/reference/generated/numpy.minimum.html" target="_blank"><code>np.minimum()</code></a></td>
 </tr>
 </tbody>
 </table>
 <p>Voor meer in deze categorie, vind <a href="https://numpy.org/doc/stable/reference/routines.math.html" target="_blank">het overzicht hier</a>.</p>
-<h3>Wiskundige berekeningen (elementsgewijs)</h3>
+<h3 id="wiskundige-berekeningen-elementsgewijs">Wiskundige berekeningen (elementsgewijs)</h3>
 <table>
 <colgroup>
 <col style="width: 39%" />
@@ -163,7 +163,7 @@
 </tbody>
 </table>
 <p>Voor meer in deze categorie, vind <a href="https://numpy.org/doc/stable/reference/routines.math.html" target="_blank">het overzicht hier</a>.</p>
-<h3>Array creatie</h3>
+<h3 id="array-creatie">Array creatie</h3>
 <table>
 <colgroup>
 <col style="width: 39%" />
@@ -178,11 +178,11 @@
 <tbody>
 <tr class="odd">
 <td><a href="https://numpy.org/doc/stable/reference/generated/numpy.zeros.html" target="_blank"><code>np.zeros()</code></a></td>
-<td>Produceert een <code>np.array</code> gevuld met nullen van de gegeven grootte.<br/><span class=seealso>Zie ook</span>: <a href="https://numpy.org/doc/stable/reference/generated/numpy.zeros_like.html" target="_blank"><code>np.zeros_like()</code></a></td>
+<td>Produceert een <code>np.array</code> gevuld met nullen van de gegeven grootte.<br/><span class="seealso">Zie ook</span>: <a href="https://numpy.org/doc/stable/reference/generated/numpy.zeros_like.html" target="_blank"><code>np.zeros_like()</code></a></td>
 </tr>
 <tr class="even">
 <td><a href="https://numpy.org/doc/stable/reference/generated/numpy.ones.html" target="_blank"><code>np.ones()</code></a></td>
-<td>Produceert een <code>np.array</code> gevuld met énen van de gegeven grootte.<br/><span class=seealso>Zie ook</span>: <a href="https://numpy.org/doc/stable/reference/generated/numpy.ones_like.html" target="_blank"><code>np.ones_like()</code></a></td>
+<td>Produceert een <code>np.array</code> gevuld met énen van de gegeven grootte.<br/><span class="seealso">Zie ook</span>: <a href="https://numpy.org/doc/stable/reference/generated/numpy.ones_like.html" target="_blank"><code>np.ones_like()</code></a></td>
 </tr>
 <tr class="odd">
 <td><a href="https://numpy.org/doc/stable/reference/generated/numpy.arange.html" target="_blank"><code>np.arange()</code></a></td>
@@ -190,12 +190,12 @@
 </tr>
 <tr class="even">
 <td><a href="https://numpy.org/doc/stable/reference/generated/numpy.linspace.html" target="_blank"><code>np.linspace()</code></a></td>
-<td>Genereert een rij getallen met geven startpunt, eindpunt, en aantal gewenste waarden.<br/><span class=note>Opmerking</span>: Werkt ook op tuples.</td>
+<td>Genereert een rij getallen met geven startpunt, eindpunt, en aantal gewenste waarden.<br/><span class="note">Opmerking</span>: Werkt ook op tuples.</td>
 </tr>
 </tbody>
 </table>
 <p>Voor meer in deze categorie, vind <a href="https://numpy.org/doc/stable/reference/routines.array-creation.html" target="_blank">het overzicht hier</a>.</p>
-<h3>Arrays samenvoegen en herhalen</h3>
+<h3 id="arrays-samenvoegen-en-herhalen">Arrays samenvoegen en herhalen</h3>
 <table>
 <colgroup>
 <col style="width: 39%" />
@@ -218,13 +218,13 @@
 </tr>
 <tr class="odd">
 <td><a href="https://numpy.org/doc/stable/reference/generated/numpy.tile.html" target="_blank"><code>np.tile()</code></a></td>
-<td>Herhaalt éénzelfde <code>np.array</code> een gegeven aantal keer over bestaande en nieuwe dimensies.<br/><span class=seealso>Zie ook</span>: <a href="https://numpy.org/doc/stable/reference/generated/numpy.repeat.html" target="_blank"><code>np.repeat()</code></a></td>
+<td>Herhaalt éénzelfde <code>np.array</code> een gegeven aantal keer over bestaande en nieuwe dimensies.<br/><span class="seealso">Zie ook</span>: <a href="https://numpy.org/doc/stable/reference/generated/numpy.repeat.html" target="_blank"><code>np.repeat()</code></a></td>
 </tr>
 </tbody>
 </table>
 <p>Voor meer in deze categorie, vind <a href="https://numpy.org/doc/stable/reference/routines.array-manipulation.html" target="_blank">het overzicht hier</a>.</p>
-<h2>Logische functies</h2>
-<h3>Waarheid test functies</h3>
+<h2 id="logische-functies">Logische functies</h2>
+<h3 id="waarheid-test-functies">Waarheid test functies</h3>
 <table>
 <colgroup>
 <col style="width: 39%" />
@@ -247,7 +247,7 @@
 </tr>
 </tbody>
 </table>
-<h3>Logische operatoren</h3>
+<h3 id="logische-operatoren">Logische operatoren</h3>
 <table>
 <colgroup>
 <col style="width: 39%" />
@@ -278,7 +278,7 @@
 </tr>
 </tbody>
 </table>
-<h3>Vergelijkingen</h3>
+<h3 id="vergelijkingen">Vergelijkingen</h3>
 <table>
 <colgroup>
 <col style="width: 39%" />
@@ -293,19 +293,19 @@
 <tbody>
 <tr class="odd">
 <td><a href="https://numpy.org/doc/stable/reference/generated/numpy.equal.html" target="_blank"><code>np.equal()</code></a></td>
-<td>Vergelijkt de twee inputs elementsgewijs met de gelijkheids operator.<br/><span class=seealso>Zie ook</span>: <a href="https://numpy.org/doc/stable/reference/generated/numpy.not_equal.html" target="_blank"><code>np.not_equal()</code></a></td>
+<td>Vergelijkt de twee inputs elementsgewijs met de gelijkheids operator.<br/><span class="seealso">Zie ook</span>: <a href="https://numpy.org/doc/stable/reference/generated/numpy.not_equal.html" target="_blank"><code>np.not_equal()</code></a></td>
 </tr>
 <tr class="even">
 <td><a href="https://numpy.org/doc/stable/reference/generated/numpy.less.html" target="_blank"><code>np.less()</code></a></td>
-<td>Vergelijkt de twee inputs elementsgewijs met de kleiner-dan operator.<br/><span class=seealso>Zie ook</span>: <a href="https://numpy.org/doc/stable/reference/generated/numpy.less_equal.html" target="_blank"><code>np.less_equal()</code></a></td>
+<td>Vergelijkt de twee inputs elementsgewijs met de kleiner-dan operator.<br/><span class="seealso">Zie ook</span>: <a href="https://numpy.org/doc/stable/reference/generated/numpy.less_equal.html" target="_blank"><code>np.less_equal()</code></a></td>
 </tr>
 <tr class="odd">
 <td><a href="https://numpy.org/doc/stable/reference/generated/numpy.greater.html" target="_blank"><code>np.greater()</code></a></td>
-<td>Vergelijkt de twee inputs elementsgewijs met de groter-dan operator.<br/><span class=seealso>Zie ook</span>: <a href="https://numpy.org/doc/stable/reference/generated/numpy.greater_equal.html" target="_blank"><code>np.greater_equal()</code></a></td>
+<td>Vergelijkt de twee inputs elementsgewijs met de groter-dan operator.<br/><span class="seealso">Zie ook</span>: <a href="https://numpy.org/doc/stable/reference/generated/numpy.greater_equal.html" target="_blank"><code>np.greater_equal()</code></a></td>
 </tr>
 </tbody>
 </table>
-<h2>Lineaire Algebra</h2>
+<h2 id="lineaire-algebra">Lineaire Algebra</h2>
 <table>
 <colgroup>
 <col style="width: 39%" />
@@ -320,11 +320,11 @@
 <tbody>
 <tr class="odd">
 <td><a href="https://numpy.org/doc/stable/reference/generated/numpy.linalg.inv.html" target="_blank"><code>np.linalg.inv()</code></a></td>
-<td>Berekent inverse van een vierkante matrix.<br/><span class=note>Opmerking</span>: Werkt op de 2 binnenste dimensies.</td>
+<td>Berekent inverse van een vierkante matrix.<br/><span class="note">Opmerking</span>: Werkt op de 2 binnenste dimensies.</td>
 </tr>
 <tr class="even">
 <td><a href="https://numpy.org/doc/stable/reference/generated/numpy.linalg.matmul.html" target="_blank"><code>np.linalg.matmul()</code></a></td>
-<td>Berekent matrix-matrix vermenigvuldiging<br/><span class=note>Opmerking</span>: Werkt op de 2 binnenste dimensies van beide inputs.</td>
+<td>Berekent matrix-matrix vermenigvuldiging<br/><span class="note">Opmerking</span>: Werkt op de 2 binnenste dimensies van beide inputs.</td>
 </tr>
 </tbody>
 </table>
