@@ -105,5 +105,5 @@ import subprocess
 process = subprocess.run(["pandoc", "-f", "markdown_phpextra", "-t", "html5", "--standalone", "--css", "pandoc_dark.css", "--metadata", "title='NumPy cheat sheet'", "--toc", "-o", "cheat-sheet.html", "cheat-sheet.md"])
 print("exit-code", process.returncode)
 
-subprocess.run(["mkdir", "-p", "doc/"])
-subprocess.run(["cp", "cheat-sheet.html", "doc/index.html"])
+subprocess.run(["mkdir", "-p", "docs/"])
+subprocess.run(["cp", "cheat-sheet.html", "docs/index.html"])
